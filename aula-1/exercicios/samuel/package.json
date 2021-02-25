@@ -1,0 +1,12 @@
+{
+  "name": "curso-vue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/picotti/aulas-vue.git",
+  "author": "Samuel Maderson",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run server:dev",
+    "server:dev": "http-server"
+  }
+}
