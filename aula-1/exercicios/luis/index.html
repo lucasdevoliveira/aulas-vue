@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Vuejs</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ titulo }}</h1>
+        <div v-if="usuario.id == 1">
+            Id: {{ usuario.id }}<br>
+            Nome: {{ usuario.nome }}<br>
+            Profissão: {{ usuario.profissao }}
+        </div>
+        <div v-else>
+            <p>Nenhum usuário com ID igual a 1.</p>
+        </div>
+    </div>
+    <!--Pacote do Vuejs-->
+    <script src="https://unpkg.com/vue"></script> 
 
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                titulo: "Vuejs",
+                usuario: {
+                    id: "2",
+                    nome: "Luis",
+                    profissao: "Programador"
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
