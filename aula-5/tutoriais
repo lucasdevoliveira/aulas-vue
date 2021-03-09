@@ -1,0 +1,7 @@
+# isntalar vue CLI
+
+npm install -g @vue/cli
+
+# criando um projeto com vue CLI
+
+npm install -g @vue/cli
