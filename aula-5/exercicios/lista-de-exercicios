@@ -1,6 +1,6 @@
 # Exercicios
 
-### Crie um componente, adicione todos os ciclos de vida de um componetne e de console.log com o nome de cada um.
+### Crie um componente, adicione todos os ciclos de vida de um componente e "chame" um console.log com o nome de cada ciclo de vida executado.
 
 
 ### Criar um projeto usando o VUE CLI
