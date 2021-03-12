@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula - 2</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p>Nomes:</p>
+            <ul>
+                <li v-for="nome in nomes">{{nome}}</li>
+            </ul>
+            <p>Times:</p>
+            <ul>
+                <li v-for="(time, index) in times" :key="index">{{time.nome}} - {{time.estado}}</li>
+            </ul>
+        </div>  
+        <script>
+
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    nomes: ['Lucas de Oliveira', 'Luna Braga de Oliveira', 'Otto Braga de Oliveira'],
+                    times: [
+                        {
+                            nome: 'Palmeiras',
+                            estado: 'São paulo'
+                        },
+                        {
+                            nome: 'Flamengo',
+                            estado: 'Rio de Janeiro'
+                        },
+                        {
+                            nome: 'Gremio',
+                            estado: 'Rio Grande do Sul'
+                        }
+                    ]
+                }
+            })
+
+        </script>
+    </body>
+</html>
