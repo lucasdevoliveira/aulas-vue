@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula - 2 | v-on</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p v-on:click="alerta()">Clique aqui!!!</p>
+
+            <p @click="alerta()">Clique aqui!!!</p>
+        </div>
+        <script>
+            const app = new Vue({
+                el: '#app',
+                methods: {
+                    alerta: function() {
+                        alert('clicou aqui =D')
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
