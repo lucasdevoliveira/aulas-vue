@@ -2,18 +2,19 @@
     <div class='skheader'>
     <h1> {{vhead}} </h1>
     <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li><a href="#">Menu1</a></li>
+      <li><a href="#">Menu2</a></li>
+      <li><a href="#">Menu3</a></li>
+      <li><a href="#">Menu4</a></li>
     </ul>
-    <a href="#"> <img alt="Vue logo" src="../assets/logo.png" height="20px"> </a>
+    <profilePic />
     </div>
 </template>
 
 <script>
+import profilePic from './profile/profile-pic.vue'
 export default {
+  components: { profilePic },
   name: 'skheader',
   props: {
     vhead: String
@@ -26,10 +27,10 @@ export default {
 .skheader{
   display: flex;
   justify-content: space-between;
-  vertical-align:-webkit-baseline-middle
+  align-items:center;
 }
 h3 {
-  margin: 40px 0 0;
+  margin: 40px 0 0
 }
 ul {
   list-style-type: none;
@@ -40,7 +41,8 @@ li {
   margin: 20px 20px;
 }
 a {
-  color: #42b983;
+  color:cadetblue;
   padding: 20px 20px;
 }
 </style>
+de quando
