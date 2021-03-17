@@ -6,3 +6,10 @@ node_modules/
 
 /node_modules
 projetos/valdecir/loja-de-carros/src/pages/home.vue
+projetos/valdecir/loja-de-carros/src/router/index.js
+projetos/valdecir/loja-de-carros/src/pages/contato/contato.vue
+projetos/valdecir/loja-de-carros/src/pages/home/home.vue
+projetos/valdecir/loja-de-carros/src/pages/carros/carros.vue
+projetos/valdecir/loja-de-carros/src/App.vue
+projetos/valdecir/loja-de-carros/src/App.vue
+projetos/valdecir/loja-de-carros/src/App.vue
