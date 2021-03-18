@@ -6,7 +6,6 @@
     </div>
 </template>
 <script>
-    estou aqui
     import Header from '../../components/Header.vue'
     import Banner from '../../components/Banner.vue'
     import Cars from '../../components/Cars.vue'

@@ -7,9 +7,6 @@ import Carros from '../pages/carros/carros.vue'
 
 Vue.use(VueRouter)
 
-
-
-
 const routes = [
     {
         path: '/',
