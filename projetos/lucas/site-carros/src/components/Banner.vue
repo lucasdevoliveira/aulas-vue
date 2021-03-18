@@ -1,9 +1,11 @@
 <template>
-    <div class="content">
-        <div class="container">
-            <h1>BANNER</h1>
-        </div>
-    </div>
+    <b-container class="content">
+        <b-row>
+            <b-col md="12">
+                banner    
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
@@ -16,7 +18,6 @@
 
 <style scoped>
     .content {
-        width: 100%;
         background: #ccc;
     }
 

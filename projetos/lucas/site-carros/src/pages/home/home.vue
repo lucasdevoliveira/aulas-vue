@@ -12,6 +12,8 @@
     import Banner from '../../components/Banner.vue'
     import Cars from '../../components/Cars.vue'
 
+    // import { BButton } from 'bootstrap-vue'
+
     export default {
         name: 'Home',
         components: {

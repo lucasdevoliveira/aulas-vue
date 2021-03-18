@@ -1,10 +1,10 @@
 <template>
-    <div class="content">
-        <div class="container">
-            <div class="search">
-                buscador
-            </div>
-            <div class="list">
+    <b-container>
+        <b-row>
+            <b-col class="search" md="3">
+                menu
+            </b-col>
+            <b-col class="list" md="9">
                 <div class="item">
                     carro 1
                 </div>
@@ -35,9 +35,9 @@
                 <div class="item">
                     carro 10
                 </div>
-            </div>
-        </div>
-    </div>  
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
@@ -54,24 +54,14 @@
     margin: 20px 0 0 0
   }
 
-  .container {
-    height: auto;
-    width: 1400px;
-    margin: 0 auto;
-    display: flex;
-  }
-
   .search {
-    height: 600px;
-    width: 380px;
-    background: #ccc;
-    margin: 0 20px 0 0;
+    background: #444;
+    height: 400px;
   }
 
   .list {
       width: 100%;
       height: auto;
-      background: #ccc;
       display: flex;
       flex-wrap: wrap;
   }
@@ -79,7 +69,7 @@
   .item {
     height: 300px;
     width: 251px;
-    background: #666;
+    background: #222;
     margin: 10px;
   }
 

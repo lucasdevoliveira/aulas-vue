@@ -1,13 +1,19 @@
 <template>
-  <div class="content">
-    <div class="container">
-      <h1><router-link to="/home">Logo</router-link></h1>
-      <ul class="list">
-        <li class="item"><router-link to="/home">home</router-link></li>
-        <li class="item"><router-link to="/carros">carros</router-link></li>
-        <li class="item"  ><router-link to="/contato">contato</router-link></li>
-      </ul>
-    </div>
+  <div>
+    <b-container>
+      <b-row>
+        <b-col md="9">
+          <h1><router-link to="/home">Logo</router-link></h1>
+        </b-col>
+        <b-col md="3">
+          <ul class="list">
+            <li class="item"><router-link to="/home">home</router-link></li>
+            <li class="item"><router-link to="/carros">carros</router-link></li>
+            <li class="item"  ><router-link to="/contato">contato</router-link></li>
+          </ul>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -20,19 +26,6 @@
 </script>
 
 <style scoped>
-
-  .content {
-    width: 100%;
-  }
-
-  .container {
-    height: 70px;
-    width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .list {
     display: flex;
