@@ -13,3 +13,9 @@ projetos/valdecir/loja-de-carros/src/pages/carros/carros.vue
 projetos/valdecir/loja-de-carros/src/App.vue
 projetos/valdecir/loja-de-carros/src/App.vue
 projetos/valdecir/loja-de-carros/src/App.vue
+projetos/valdecir/loja-de-carros/src/components/Banner.vue
+projetos/valdecir/loja-de-carros/src/components/Header.vue
+projetos/valdecir/loja-de-carros/src/components/Cars.vue
+projetos/valdecir/loja-de-carros/src/App.vue
+package-lock.json
+.gitignore
