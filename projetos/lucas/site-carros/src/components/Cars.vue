@@ -2,38 +2,15 @@
     <b-container>
         <b-row>
             <b-col class="search" md="3">
-                menu
+                <h1>Busque o seu carro:</h1>
             </b-col>
             <b-col class="list" md="9">
-                <div class="item">
-                    carro 1
-                </div>
-                <div class="item">
-                    carro 2
-                </div>
-                <div class="item">
-                    carro 3
-                </div>
-                <div class="item">
-                    carro 4
-                </div>
-                <div class="item">
-                    carro 5
-                </div>
-                <div class="item">
-                    carro 6
-                </div>
-                <div class="item">
-                    carro 7
-                </div>
-                <div class="item">
-                    carro 8
-                </div>
-                <div class="item">
-                    carro 9
-                </div>
-                <div class="item">
-                    carro 10
+                <div v-for="(car, index) in cars" :key="index">
+                    <div class="item">
+                        <img :src="require(`@/assets/cars/${car.image}`)">
+                        <p>{{car.name}}</p>
+                        <router-link :to="{ name: 'carro', params: { id: car.id } }">{{car.price}}</router-link>
+                    </div>
                 </div>
             </b-col>
         </b-row>
@@ -43,7 +20,8 @@
 <script>
 
     export default {
-        name: 'Cars'   
+        name: 'Cars',
+        props: ['cars'] 
     }
 
 </script>
@@ -55,7 +33,7 @@
   }
 
   .search {
-    background: #444;
+    background: #fff;
     height: 400px;
   }
 
@@ -69,7 +47,7 @@
   .item {
     height: 300px;
     width: 251px;
-    background: #222;
+    background: #fff;
     margin: 10px;
   }
 

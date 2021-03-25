@@ -3,13 +3,14 @@ import VueRouter from 'vue-router'
 
 import Home from '../pages/home/home.vue'
 import Contato from '../pages/contato/contato.vue'
-import Carros from '../pages/carros/carros.vue' 
+import Carros from '../pages/carros/carros.vue'
+import Carro from '../pages/carro/carro.vue' 
 
 Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/',
+        path: '/home',
         name: 'home',
         component: Home,
     },
@@ -22,6 +23,15 @@ const routes = [
         path: '/carros',
         name: 'carros',
         component: Carros
+    },
+    {
+        path: '/carro/:id',
+        name: 'carro',
+        component: Carro
+    },
+    {
+        path: '*',
+        redirect: '/home'
     }
 ]
 

@@ -1,11 +1,11 @@
 <template>
   <div>
     <b-container>
-      <b-row>
-        <b-col md="9">
+      <b-row class="row">
+        <b-col md="9" class="center">
           <h1><router-link to="/home">Logo</router-link></h1>
         </b-col>
-        <b-col md="3">
+        <b-col md="3" class="center">
           <ul class="list">
             <li class="item"><router-link to="/home">home</router-link></li>
             <li class="item"><router-link to="/carros">carros</router-link></li>
@@ -26,6 +26,15 @@
 </script>
 
 <style scoped>
+
+  .row {
+    height: 70px;
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+  }
 
   .list {
     display: flex;

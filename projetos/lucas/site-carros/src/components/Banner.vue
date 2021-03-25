@@ -1,8 +1,8 @@
 <template>
-    <b-container class="content">
+    <b-container fluid class="content">
         <b-row>
             <b-col md="12">
-                banner    
+                <img v-if="image" :src="require(`@/assets/${image}`)">
             </b-col>
         </b-row>
     </b-container>
@@ -11,16 +11,13 @@
 <script>
 
     export default {
-        name: 'Banner'
+        name: 'Banner',
+        props: ['image']
     }
 
 </script>
 
 <style scoped>
-    .content {
-        background: #ccc;
-    }
-
     .container {
         height: 420px;
         width: 1400px;
@@ -28,5 +25,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .content img {
+        width: 100%;
     }
 </style>
