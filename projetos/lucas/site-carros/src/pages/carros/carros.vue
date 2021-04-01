@@ -18,7 +18,6 @@
         },
         data: () => {
             return {
-                banner: '',
                 cars: []
             }
         },
@@ -27,9 +26,7 @@
                 fetch('http://localhost:3000/cars')
                     .then(response => response.json())
                     .then(response => {
-                        this.banner = response.banner
-                        console.log(this.banner)
-                        this.cars = response.cars
+                        this.cars = response
                     })
                     .catch(error => {
                         console.log(error)

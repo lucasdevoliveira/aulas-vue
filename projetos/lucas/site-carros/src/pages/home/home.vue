@@ -11,7 +11,7 @@
     import Header from '../../components/Header.vue'
     import Banner from '../../components/Banner.vue'
     import Cars from '../../components/Cars.vue'
-
+    
     export default {
         name: 'Home',
         components: {
@@ -21,18 +21,16 @@
         },
         data: () => {
             return {
-                banner: '',
+                banner: 'banner.png',
                 cars: []
             }
         },
         methods: {
-            fetchCars () {
+            getCars () {
                 fetch('http://localhost:3000/cars')
                     .then(response => response.json())
                     .then(response => {
-                        this.banner = response.banner
-                        console.log(this.banner)
-                        this.cars = response.cars
+                        this.cars = response
                     })
                     .catch(error => {
                         console.log(error)
@@ -40,11 +38,10 @@
             }
         },
         mounted() {
-            this.fetchCars();
+            this.getCars();
         }
         
     }
-
 </script>
 
 <style scoped>

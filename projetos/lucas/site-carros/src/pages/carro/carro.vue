@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header />
-        <h1>Carro selecionado: {{id}}</h1>
+        <h1>{{car}}</h1>
     </div>
 </template>
 
@@ -16,7 +16,7 @@
         },
         data: () => {
             return {
-                id: null,
+                car: null,
             }
         },
         mounted() {
@@ -24,7 +24,15 @@
         },
         methods: {
             getCar() {
-                this.id = this.$route.params.id
+                const id = this.$route.params.id
+                fetch(`http://localhost:3000/cars/${id}`)
+                    .then(response => response.json())
+                    .then(response => {
+                        this.car = response
+                    })
+                    .catch(error => {
+                        console.error(error)
+                    })
             }
         }
     }

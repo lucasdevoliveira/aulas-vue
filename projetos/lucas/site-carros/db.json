@@ -1,74 +1,70 @@
 {
-    "cars": {
-        "banner": "banner.png",
-        "cars": [
-            {
-                "id": 1,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 180000
-            },
-            {
-                "id": 2,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 3,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 4,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 5,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 6,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 7,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 8,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 9,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 10,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            },
-            {
-                "id": 11,
-                "name": "Porsche Cayane",
-                "image": "porsche.jpg",
-                "price": 280000
-            }
-            
-        ]
-    }
+    "cars": [
+        {
+            "id": 1,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 180000
+        },
+        {
+            "id": 2,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 3,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 4,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 5,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 6,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 7,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 8,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 9,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 10,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        },
+        {
+            "id": 11,
+            "name": "Porsche Cayane",
+            "image": "porsche.jpg",
+            "price": 280000
+        }
+    ]
   }
